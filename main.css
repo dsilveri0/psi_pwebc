@@ -1,0 +1,32 @@
+body {
+    width: 960px;
+    text-align: center;
+    margin: auto;
+}
+
+.pageTitle {
+    font-family: monospace;
+}
+
+p {
+    font-family: serif;
+}
+
+a.firstLink {
+    color: rgb(0, 80, 31);
+}
+a.firstLink:hover {
+    color: rgb(0, 196, 163);
+}
+a.secondLink {
+    color: rgb(131, 70, 0);
+}
+a.secondLink:hover {
+    color: #dbc500;
+}
+a.thirdLink {
+    color: #000544;
+}
+a.thirdLink:hover {
+    color: #004770;
+}
