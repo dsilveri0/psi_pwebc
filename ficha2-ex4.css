@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+.left {
+    width: 70%;
+    float: left;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 70px;
+    padding-top: 30px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.right {
+    width: 30%;
+    float: right;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-top: 30px;
+}
+
+.right a {
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+.links-div {
+    margin: auto;
+    text-align: center;
+}
+
+.links-left {
+    padding: 10px 50px;
+    background-color: green;
+    color: white;
+    margin: 5px 40px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.links-middle {
+    padding: 10px 50px;
+    background-color: green;
+    color: white;
+    margin: 5px 40px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.links-right {
+    padding: 10px 50px;
+    background-color: green;
+    color: white;
+    margin: 5px 40px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.title {
+    padding: 50px 30px;
+    margin-top: 0px!important;
+    background-color: green;
+    color: white;
+    margin: 50px 40px;
+}
