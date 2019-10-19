@@ -18,7 +18,8 @@ html, body, #root {
     margin-bottom: 20px;
 }
 
-.mainImage {
-    width: 720px;
+#mainImage {
     height: 400px;
+    width: 720px;
 }
+
