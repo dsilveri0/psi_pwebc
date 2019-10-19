@@ -11,7 +11,6 @@ let images = [
 
 window.imageIndex;
 
-
 function imageCarousel() {
     if (i < 6) {
         document.getElementById("mainImage").setAttribute("src", images[i]);
