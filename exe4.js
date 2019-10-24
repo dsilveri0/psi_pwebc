@@ -8,7 +8,6 @@ let images = [
     "http://blog.locaweb.com.br/wp-content/uploads/2017/09/At%C3%A9-onde-vai-o-poder-do-JavaScript.png",
     "https://www.weblink.com.br/blog/wp-content/uploads/2018/04/O-Que-e-JavaScript-e-Como-Funciona.png"
 ]
-
 window.imageIndex;
 
 function imageCarousel() {
@@ -56,10 +55,7 @@ function previousImage() {
     }
 }
 
-
 document.querySelector(".stopButton").addEventListener("click", stopCarousel);
 document.querySelector(".restartButton").addEventListener("click", restartCarousel);
 document.querySelector(".nextButton").addEventListener("click", nextImage);
 document.querySelector(".prevButton").addEventListener("click", previousImage);
-
-
