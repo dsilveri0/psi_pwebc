@@ -19,7 +19,7 @@ function imageCarousel() {
     }
     else
         i = 0;
-    
+
 }
 
 function stopCarousel() {
@@ -30,36 +30,10 @@ function restartCarousel() {
     startCarousel = setInterval(imageCarousel, 2000);
 }
 
-function nextImage() {
-    var index = window.imageIndex;
-    stopCarousel();
-    if (index > 0 && index < 6) {
-        index++;
-        document.getElementById("mainImage").setAttribute("src", images[index]);
-    }
-    else
-        index = 6;
-
-    console.log(index+1);
-}
-
-function previousImage() {
-    var index = window.imageIndex;
-    stopCarousel();
-    if(index > 0 && index < 6) {
-        index--;
-        document.getElementById("mainImage").setAttribute("src", images[index]);
-    }
-    else
-        index = 0;
-
-    console.log(index-1);
-}
-
 
 document.querySelector(".stopButton").addEventListener("click", stopCarousel);
 document.querySelector(".restartButton").addEventListener("click", restartCarousel);
-document.querySelector(".nextButton").addEventListener("click", nextImage);
-document.querySelector(".prevButton").addEventListener("click", previousImage);
+//document.querySelector(".nextButton").addEventListener("click", nextImage);
+//document.querySelector(".prevButton").addEventListener("click", previousImage);
 
 
