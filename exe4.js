@@ -20,6 +20,8 @@ function imageCarousel() {
     else
         i = 0;
 
+    return window.imageIndex;
+
 }
 
 function stopCarousel() {
@@ -30,10 +32,34 @@ function restartCarousel() {
     startCarousel = setInterval(imageCarousel, 2000);
 }
 
+function nextImage() {
+    stopCarousel();
+    if (window.imageIndex < 5) {
+        window.imageIndex++;
+        document.getElementById("mainImage").setAttribute("src", images[window.imageIndex]);
+    }
+    else {
+        window.imageIndex = 0;
+        document.getElementById("mainImage").setAttribute("src", images[window.imageIndex]);
+    }
+}
+
+function previousImage() {
+    stopCarousel();
+    if (window.imageIndex == 0) {
+        window.imageIndex = 5;
+        document.getElementById("mainImage").setAttribute("src", images[window.imageIndex]);
+    }
+    else {
+        window.imageIndex--;
+        document.getElementById("mainImage").setAttribute("src", images[window.imageIndex]);
+    }
+}
+
 
 document.querySelector(".stopButton").addEventListener("click", stopCarousel);
 document.querySelector(".restartButton").addEventListener("click", restartCarousel);
-//document.querySelector(".nextButton").addEventListener("click", nextImage);
-//document.querySelector(".prevButton").addEventListener("click", previousImage);
+document.querySelector(".nextButton").addEventListener("click", nextImage);
+document.querySelector(".prevButton").addEventListener("click", previousImage);
 
 
