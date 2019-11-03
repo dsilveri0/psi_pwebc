@@ -1,3 +1,3 @@
-# PSI Programação Web - Cliente
+# PSI Web - Client Programming
 
-Repositórios de exercícios referentes à disciplina de Programação Web - Cliente.
+Exercises for the web client programming class.
